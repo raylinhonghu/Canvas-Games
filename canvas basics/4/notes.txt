@@ -1,0 +1,20 @@
+Loading an Imaga
+1. declare a new Image() object
+2. declare its 'onload' method
+3. set Image.src = "url"
+
+we need to specify the callback function first'onload'
+before setting up the source atrribute, otherwise we 
+wont get a callback.(because: as soon as the src is set
+to a value, js will kick off a load function)
+
+
+Load Image 
+-------------------------
+var img = new Image();
+img.onload = onImageLoad;
+img.src = 'cy.jpg';
+
+onImageLoad = function () {
+  context.drawImage(this, 0, 0);
+}

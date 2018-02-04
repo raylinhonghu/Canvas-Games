@@ -1,0 +1,18 @@
+1.FIFO
+
+SNAKE
+- direction: direction of snake
+- last: poniter to the last element in the queue
+- init(d,x,y): clear the queue,sets the start position and direction
+- remove() : removes and returns the first element in the queue
+- adds an element to the queue
+
+FOOD
+- represent only by an id in the grid
+- setFood(): position is set randomly to a free cell
+
+HTML CANVAS
+- fillStyle
+- width/height
+- getContext
+- fillRect
